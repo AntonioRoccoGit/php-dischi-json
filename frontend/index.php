@@ -24,7 +24,35 @@
             <div class="header">
                 <i class="fa-brands fa-spotify logo"></i>
             </div>
-
+            <div class="main">
+                <div class="ms_container">
+                    <div class="container">
+                        <div class="row row-cols-3 ms_row">
+                            <div v-for="(disk, index) in disks_array " class="col pb-5" :key="index">
+                                <div @click="handle_overlay(disk)" class="card ms_card">
+                                    <img class="card-img-top" :src="disk.poster" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{ disk.title }}</h5>
+                                        <p class="card-text">{{ disk.author }}</p>
+                                        <h5 class="card-title">{{ disk.year }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div v-if="overlay_show && item_overlay.title" class="disk-overlay rounded-2">
+                            <div class="card ms_card">
+                                <img class="card-img-top" :src="item_overlay.poster" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ item_overlay.title }}</h5>
+                                    <p class="card-text">{{ item_overlay.author }}</p>
+                                    <h5 class="card-title">{{ item_overlay.year }}</h5>
+                                </div>
+                            </div>
+                            <button @click="overlay_show = false" class="ms_btn btn btn-outline-light"> X </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

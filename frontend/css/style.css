@@ -28,6 +28,66 @@ i.logo {
     line-height: var(--header-heigth);
 }
 
+/****************************
+*********** MAIN ************
+*****************************/
+
+.main {
+    padding: 4vh 0 10vh;
+    height: calc(100vh - var(--header-heigth));
+    position: relative;
+}
+
+.ms_container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: auto;
+}
+
+.ms_row {
+    height: 100%;
+    overflow: auto;
+}
+
+.ms_card {
+    background-color: var(--bg-card-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+/****************************
+******** OVERLAY **********
+*****************************/
+
+.disk-overlay {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: #112031ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disk-overlay .ms_card {
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: context-menu;
+}
+
+.ms_btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
 /****************************
 ******** VARIABLES **********
