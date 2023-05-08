@@ -27,6 +27,7 @@
             <div class="main">
                 <div class="ms_container">
                     <div class="container">
+                        <!-- CARD -->
                         <div class="row row-cols-3 ms_row">
                             <div v-for="(disk, index) in disks_array " class="col pb-5" :key="index">
                                 <div @click="handle_overlay(disk)" class="card ms_card">
@@ -39,6 +40,9 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- /CARD -->
+
+                        <!-- OVERLAY -->
                         <div v-if="overlay_show && item_overlay.title" class="disk-overlay rounded-2">
                             <div class="card ms_card">
                                 <img class="card-img-top" :src="item_overlay.poster" alt="Card image cap">
@@ -50,6 +54,7 @@
                             </div>
                             <button @click="overlay_show = false" class="ms_btn btn btn-outline-light"> X </button>
                         </div>
+                        <!-- /OVERLAY -->
                     </div>
                 </div>
             </div>
