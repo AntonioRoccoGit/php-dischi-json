@@ -1,0 +1,44 @@
+/****************************
+********* LAYOUT ************
+*****************************/
+#app {
+    width: 100%;
+    height: 100vh;
+}
+
+.mc-wrapper {
+    width: 100%;
+    height: var(--max-heigth);
+    background-color: var(--bg-main-color);
+    color: white;
+}
+
+.header {
+    height: var(--header-heigth);
+    background-color: var(--header-color);
+}
+
+/****************************
+********* HEADER ************
+*****************************/
+i.logo {
+    font-size: 40px;
+    color: var(--logo-color);
+    padding-left: 32px;
+    line-height: var(--header-heigth);
+}
+
+
+/****************************
+******** VARIABLES **********
+*****************************/
+:root {
+    /* color */
+    --header-color: #06131F;
+    --bg-card-color: #112030;
+    --bg-main-color: #1D2D3C;
+    --logo-color: #18D860;
+    /* heigth */
+    --header-heigth: 60px;
+    --max-heigth: 100vh;
+}

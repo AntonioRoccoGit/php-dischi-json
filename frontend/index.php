@@ -14,13 +14,18 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- AXIOS -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div id="app">
-        <ul>
-            <li v-for="disk in disk_array">{{disk.title}}</li>
-        </ul>
+        <div class="mc-wrapper">
+            <div class="header">
+                <i class="fa-brands fa-spotify logo"></i>
+            </div>
+
+        </div>
     </div>
 
     <script src="js/script.js"></script>
